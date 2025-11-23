@@ -1,0 +1,1 @@
+export const API_BASE =  `${process.env.BACK_URL}/api` || 'http://localhost:5000/api';
