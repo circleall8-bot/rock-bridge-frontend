@@ -83,8 +83,8 @@ export function WhoAreWeSection({ t = {}, lang: overrideLang } = {}) {
 
             <div className={`flex flex-col md:flex-row gap-4 ${isRTL ? "md:flex-row-reverse" : ""}`}>
               <motion.div variants={smallPop} className="bg-[#f8fafc] p-4 rounded-lg shadow flex-1">
-                <div className="font-bold text-xl text-[#9d1e17]">{experienceCount}</div>
-                <div className="text-sm text-gray-600">{experienceLabel}</div>
+                <div className="font-bold text-xl text-[#9d1e17]">{experienceLabel}</div>
+                <div className="text-sm text-gray-600">{experienceCount}</div>
               </motion.div>
 
               <motion.div variants={smallPop} className="bg-[#f8fafc] p-4 rounded-lg shadow flex-1">

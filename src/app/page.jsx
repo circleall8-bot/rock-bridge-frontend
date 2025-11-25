@@ -86,7 +86,7 @@ const AUTO_ADVANCE_MS_DEFAULT = 4000;
 /* default nav order keys (we'll map to translations) */
 const NAV_KEYS_ORDER = ["home", "services", "who", "distinguish", "core-values", "tourism", "why"];
 
-const EMAIL = "Window.ksa30@gmail.com";
+const EMAIL = "info@rockbridge.store";
 
 /* --- Page component --- */
 export default function Page() {
@@ -294,7 +294,7 @@ export default function Page() {
 
   const handleGetOffer = () => {
     const subject = encodeURIComponent(t?.getOffer?.subject ?? (isRTL ? "طلب عرض" : "Get Offer from Website"));
-    const mail = t?.contact?.email ?? t?.footer?.contact?.email ?? EMAIL;
+    const mail = EMAIL;
     window.location.href = `mailto:${mail}?subject=${subject}`;
   };
 
@@ -523,15 +523,13 @@ export default function Page() {
       <section id="services" aria-labelledby="services-heading">
         <OurWorkSection t={t} />
       </section>
-
-      <section id="how-we-work" aria-labelledby="how-we-work-heading">
-        <HowWeWorkSection t={t} />
-      </section>
-
-      <MarketsAndSectorsSection t={t} />
       <section id="who" aria-labelledby="who-heading">
         <WhoAreWeSection t={t} />
       </section>
+      <section id="how-we-work" aria-labelledby="how-we-work-heading">
+        <HowWeWorkSection t={t} />
+      </section>
+      <MarketsAndSectorsSection t={t} />
 
       <section id="distinguish" aria-labelledby="distinguish-heading">
         <DistinguishSection t={t} />

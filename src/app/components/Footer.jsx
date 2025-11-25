@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { NewsletterFooter } from "./NewsletterFooter";
 import Image from "next/image";
+import Link from "next/link";
 
 export function Footer({ t }) {
   const footer = t?.footer ?? {};
@@ -24,9 +25,9 @@ export function Footer({ t }) {
             <p className="text-white/80 mb-6">{footerAbout}</p>
           </div>
 
-          <div>
+          <div className="flex flex-col items-start gap-2">
             <h4 className="font-semibold mb-4">{t?.footer?.contactHeading ?? "Contact Us"}</h4>
-            <div className="flex items-start gap-3 mb-4">
+            <div className="flex items-start gap-3">
               <div className="bg-white text-[#9d1e17] p-3 rounded-md">📞</div>
               <div>
                 <div className="text-sm text-white/80">{t?.footer?.contact?.consultations ?? "Consultations"}</div>
@@ -37,9 +38,32 @@ export function Footer({ t }) {
               <div className="bg-white text-[#9d1e17] p-3 rounded-md">✉️</div>
               <div>
                 <div className="text-sm text-white/80">{t?.footer?.contact?.support ?? "Support"}</div>
-                <div className="font-semibold">{t?.footer?.contact?.email ?? "Window.ksa30@gmail.com"}</div>
+                <div className="font-semibold">info@rockbridge.store</div>
               </div>
             </div>
+            <Link
+              href="https://www.tiktok.com/@therock.bridge?_r=1&_t=ZS-91hAKtl6f"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-start gap-3"
+            >
+              <div className="bg-white text-[#9d1e17] p-3 rounded-md flex items-center justify-center">
+                {/* TikTok SVG Icon */}
+                <svg
+                  width="20"
+                  height="20"
+                  viewBox="0 0 256 256"
+                  xmlns="http://www.w3.org/2000/svg"
+                  fill="currentColor"
+                >
+                  <path d="M232 79.2a79 79 0 0 1-45.9-14.7A79.7 79.7 0 0 1 164 22h-36v146.2a28.1 28.1 0 1 1-19.6-26.8V103a64 64 0 1 0 45.6 76.8V88.2a112.4 112.4 0 0 0 63 20.1Z" />
+                </svg>
+              </div>
+              <div>
+                <div className="text-sm text-white/80">TikTok</div>
+                <div className="font-semibold">@therock.bridge</div>
+              </div>
+            </Link>
           </div>
           <div className=" max-w-full w-[150px] rounde flex flex-col items-start gap-2 justify-start">
             <h4 className="font-semibold">Scan to Chat</h4>

@@ -78,6 +78,18 @@ export const metadata = {
     canonical: "https://rockbridge.store",
   },
 
+  icons: {
+    icon: [
+      { url: "/favicon.ico", sizes: "any" },
+      { url: "/images/logo.png", sizes: "32x32", type: "image/png" },
+      { url: "/images/logo.png", sizes: "192x192", type: "image/png" },
+      { url: "/images/logo.png", sizes: "512x512", type: "image/png" },
+    ],
+    apple: [
+      { url: "/images/logo.png", sizes: "180x180" },
+    ],
+  },
+
   // 🔹 Theme and viewport
 
   // 🔹 Misc
