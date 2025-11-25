@@ -11,8 +11,6 @@ export default function GetOfferPage() {
   const [errors, setErrors] = useState({});
   const [status, setStatus] = useState({ loading: false, success: null, error: null });
 
-
-
   const validate = () => {
     const e = {};
     if (!form.name.trim()) e.name = "Please enter your name";
@@ -44,7 +42,7 @@ export default function GetOfferPage() {
       const resp = await axios.post(
         url,
         { ...form },
-        { headers: { "Content-Type": "application/json" }, timeout: 15000 }
+        { headers: { "Content-Type": "application/json" }}
       );
 
       // success
