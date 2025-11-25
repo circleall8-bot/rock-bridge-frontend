@@ -78,6 +78,11 @@ export const metadata = {
     canonical: "https://rockbridge.store",
   },
 
+  authors: [
+    { name: "fares mohamed", url: "https://fares-dev.com" },
+    { name: "fares mohamed" }
+  ],
+
   icons: {
     icon: [
       { url: "/favicon.ico", sizes: "any" },
